@@ -2,13 +2,13 @@
   <div id="app">
     <img src="./assets/logo.png">
     <!--当前路由地址显示页面-->
-    <router-view/>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'app'
 }
 </script>
 
