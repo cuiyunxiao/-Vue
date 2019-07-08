@@ -2,10 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import router from 'fastclick'
+import fastClick from './router'
+import './assets/styles/reset.css'
+import './assets/styles/border.css'
+
 
 Vue.config.productionTip = false
-
+fastClick.attch(document,body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -13,3 +17,6 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
+//路由根据网址不同显示不同类容
